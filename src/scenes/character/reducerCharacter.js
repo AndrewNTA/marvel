@@ -15,7 +15,7 @@ export default (state = initialState, action) => {
     case FETCH_CHARACTER_DETAIL_START:
       return { ...state, loading: true };
     case FETCH_CHARACTER_DETAIL_SUCCESS:
-      return { ...state, loading: false, characterDetail: action.response.data.results[0] };
+      return { ...state, loading: false, characterDetail: action.response.data.results[0], error: '' };
     case FETCH_CHARACTER_DETAIL_ERROR:
       return { ...state, loading: false, error: action.error.message };
     default:

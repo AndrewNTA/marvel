@@ -17,7 +17,7 @@ export default (state = initialState, action) => {
     case FETCH_ALL_CHARACTERS_SUCCESS:
       {
         const { results, total } = action.response.data;
-        return { ...state, loading: false, listCharacters: results, total };        
+        return { ...state, loading: false, listCharacters: results, total, error: '' };        
       }
     case FETCH_ALL_CHARACTERS_ERROR:
       return { ...state, loading: false, error: action.error.message };

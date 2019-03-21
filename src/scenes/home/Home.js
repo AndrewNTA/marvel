@@ -83,10 +83,12 @@ const mapStateToProps = state => ({
   reducerHome: state.reducerHome
 });
 
-const mapDispatchToProps = dispatch => ({
+export const mapDispatchToProps = dispatch => ({
   dispatchFetchAllCharacters: (payload) => {
     dispatch(fetchAllCharactersStart(payload))
   }
 });
+
+export { Home as PureHome };
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Home));

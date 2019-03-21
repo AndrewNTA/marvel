@@ -30,10 +30,12 @@ const mapStateToProps = state => ({
   reducerCharacter: state.reducerCharacter
 });
 
-const mapDispatchToProps = dispatch => ({
+export const mapDispatchToProps = dispatch => ({
   dispatchFetchCharacterDetail: (id) => {
     dispatch(fetchCharacterDetailStart(id))
   }
 });
+
+export { CharacterContainer as PureCharacterContainer}
 
 export default connect(mapStateToProps, mapDispatchToProps)(CharacterContainer);

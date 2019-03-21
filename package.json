@@ -5,6 +5,8 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "classnames": "^2.2.6",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.11.2",
     "lodash": "^4.17.11",
     "react": "^16.8.3",
     "react-bootstrap": "^1.0.0-beta.5",
@@ -36,5 +38,8 @@
   "description": "Marvel App is a simple React-Redux application integrate with [Marvel API](https://developer.marvel.com/docs). This app use React Bootstrap library to render UI.",
   "main": "index.js",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "react-test-renderer": "^15.6.2"
+  }
 }

@@ -11,6 +11,12 @@ Use the package manager [npm](https://www.npmjs.com/) to install Marvel App.
 npm install
 ```
 
+## Unit Tests
+
+```bash
+npm test
+npm test -- --coverage
+
 ## Build
 
 ```bash
