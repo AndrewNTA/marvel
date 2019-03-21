@@ -8,9 +8,10 @@ import * as serviceWorker from './serviceWorker';
 import { configureStore } from './store';
 
 const store = configureStore();
+
 render(
   <Provider store={store}>
-    <App />
+    <App/>
   </Provider>,
   document.getElementById('root')
 );

@@ -1,13 +1,15 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Home from './scenes/home';
+import CharacterContainer from './scenes/character';
 
 const App = () => (
 	<Router>
-		<div>
+		<Switch>
 			<Route exact path='/' component={Home} />
-		</div>
+			<Route exact path='/:id' component={CharacterContainer} />
+		</Switch>
 	</Router>
 )
 
