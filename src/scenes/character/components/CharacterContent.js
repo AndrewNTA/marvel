@@ -1,5 +1,5 @@
 import React from 'react';
-import { isEmpty } from 'lodash';
+import isEmpty from 'lodash/isEmpty';
 import Image from 'react-bootstrap/Image';
 
 import Loading from '../../../components/loading';

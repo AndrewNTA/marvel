@@ -1,7 +1,7 @@
 import React from 'react';
 import Table from 'react-bootstrap/Table';
 import Image from 'react-bootstrap/Image';
-import { isEmpty } from 'lodash';
+import isEmpty from 'lodash/isEmpty';
 
 import Error from '../../../components/error';
 import Loading from '../../../components/loading';

@@ -1,7 +1,8 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import { isEmpty, floor } from 'lodash';
+import isEmpty from 'lodash/isEmpty';
+import floor from 'lodash/floor';
 
 import Banner from '../../components/banner';
 import TableView from './components/TableView';
@@ -58,7 +59,7 @@ class Home extends PureComponent {
     const { currentPage } = this.state;
     const hasData = !isEmpty(listCharacters);
     const pageNumber = !(total % PAGE_SIZE)? floor(total/PAGE_SIZE): floor(total/PAGE_SIZE + 1);
-  
+
     return (
       <div>
         <Banner/>
