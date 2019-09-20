@@ -8,6 +8,7 @@
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.11.2",
     "lodash": "^4.17.11",
+    "progress-bar-webpack-plugin": "^1.12.1",
     "react": "^16.8.3",
     "react-bootstrap": "^1.0.0-beta.5",
     "react-dom": "^16.8.3",
@@ -24,7 +25,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "analyzer": "node scripts/analyzer.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -40,6 +42,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "react-test-renderer": "^15.6.2"
+    "react-test-renderer": "^15.6.2",
+    "webpack-bundle-analyzer": "^3.5.0"
   }
 }
